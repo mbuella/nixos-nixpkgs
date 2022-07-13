@@ -32488,6 +32488,12 @@ with pkgs;
   cinnamon = recurseIntoAttrs (callPackage ../desktops/cinnamon { });
   inherit (cinnamon) mint-x-icons mint-y-icons;
 
+  cutefish = recurseIntoAttrs (import ../desktops/cutefish {
+    inherit pkgs;
+    inherit (lib) makeScope;
+    inherit libsForQt5;
+  });
+
   enlightenment = recurseIntoAttrs (callPackage ../desktops/enlightenment {
     callPackage = newScope enlightenment;
   });

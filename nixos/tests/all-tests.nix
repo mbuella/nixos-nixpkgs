@@ -109,6 +109,7 @@ in
   couchdb = handleTest ./couchdb.nix {};
   cri-o = handleTestOn ["x86_64-linux"] ./cri-o.nix {};
   custom-ca = handleTest ./custom-ca.nix {};
+  cutefish = handleTest ./cutefish.nix {};
   croc = handleTest ./croc.nix {};
   cryptpad = handleTest ./cryptpad.nix {};
   deluge = handleTest ./deluge.nix {};
